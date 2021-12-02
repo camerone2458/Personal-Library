@@ -1,0 +1,79 @@
+@font-face {
+  font-family: InkNutAntiqua-Light;
+  src: url(fonts/InknutAntiqua-Light.woff),
+       url(fonts/InknutAntiqua-Light.woff2);
+}
+
+body, a, ul, li, p, nav,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #474853;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header, footer {
+  background-color: #687864;
+  color: #F3F3F3;
+  padding: 10px;
+}
+
+ul, li, a {
+  color: #F3F3F3;
+}
+
+header {
+  box-shadow: 2px 4px 6px #333333;
+}
+
+h1 {
+  color: #BDB8A5;
+  font-family: InkNutAntiqua-Light;
+  text-shadow: 2px 4px 4px #000000;
+}
+
+h1, p, li, button {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+header p {
+  font-size: 28px;
+  font-family: InkNutAntiqua-Light;
+  line-height: 35px;
+  text-shadow: 1px 2px 3px #333333;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.small-gap {
+  gap: 15px;
+}
+
+.tiny-gap {
+  gap: 10px;
+}
+
+#main {
+  flex: 1;
+  padding: 5px 45px;
+}
