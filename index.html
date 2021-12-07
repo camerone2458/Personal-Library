@@ -6,12 +6,15 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body class="flex-column">
+<body class="flex-column small-gap">
   <header class="flex">
     <p>Personal Library</p>
   </header>
-  <div id="main" class="flex">
-    <h1>Collection of Books</h1>
+  <div id="main" class="flex-column small-gap">
+    <div class="page-title flex">
+      <h1>Collection of Books</h1>
+      <button class="new-book" onclick="addBookToLibrary()">Add a Book!</button>
+    </div>
     <div id="bookContainer" class="flex-wrap"></div>
   </div>
   <footer class="flex-column centered tiny-gap">

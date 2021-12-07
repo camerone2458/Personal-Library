@@ -36,6 +36,7 @@ h1 {
   color: #BDB8A5;
   font-family: InkNutAntiqua-Light;
   text-shadow: 2px 4px 4px #000000;
+  font-size: 2.5rem;
 }
 
 h1, p, li, button {
@@ -53,6 +54,14 @@ header p {
 
 .flex {
   display: flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  color: #f3f3f3;
+  gap: 45px;
+  font-size: 1.2rem;
 }
 
 .flex-column {
@@ -73,7 +82,69 @@ header p {
   gap: 10px;
 }
 
+.bookCard {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 2px 3px 4px #333333;
+  width: 350px;
+  text-align: center;
+  height: 400px;
+  justify-content: space-between;
+}
+
+.page-title {
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+
+.new-book {
+  margin-right: 50px;
+  padding: 15px;
+  height: 75px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #687864;
+  color: #F3F3F3;
+  border-radius: 5px;
+  border: 1px solid #474853;
+  transition-duration: .2s;
+}
+
+.new-book:hover {
+  border: 1px solid #F3F3F3;
+}
+
+.read,
+.not-read {
+  width: 22%;
+  height: auto;
+  align-self: flex-end;
+  margin: 15px;
+}
+
+#delete-button {
+  font-size: 1.1rem;
+  width: 40%;
+  background-color: #687864;
+  color: #F3F3F3;
+  border-radius: 5px;
+  border: 1px solid #474853;
+  height: 35px;
+  align-self: flex-end;
+  margin: 15px 15px 45px 5px;
+}
+
+#delete-button:hover {
+  border: 1px solid #F3F3F3;
+  transition-duration: .2s;
+}
+
 #main {
   flex: 1;
   padding: 5px 45px;
+}
+
+#bookContainer {
+  justify-content: center;
 }
